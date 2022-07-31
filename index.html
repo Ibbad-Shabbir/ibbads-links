@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Ibbad Shabbir - Links</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', ( ) => {
+
+            VANTA.BIRDS({
+              el: "#vanta",
+              mouseControls: true,
+              touchControls: true,
+              gyroControls: false,
+              minHeight: 200.00,
+              minWidth: 200.00,
+              scale: 1.00,
+              scaleMobile: 1.00,
+              color2: 0xff00ce,
+              wingSpan: 40.00,
+              separation: 100.00,
+              alignment: 65.00,
+              cohesion: 5.00,
+              quantity: 1.00,
+              backgroundAlpha: 0.0
+            })
+            setTimeout(() => {
+                const main = document.querySelector('main')
+                main.style.opacity = 1
+                main.style.filter = 'blur(0px)'
+            }, 1000);
+        })
+        </script>
+</head>
+<body>
+    <div id="vanta"></div>
+    <main>
+        <header>
+            <img src="./images/profile.jpg" alt="">
+            <h1>@ui.ibbad</h1>
+        </header>
+        <ul>
+            <li>
+            <a target="_blank"  href="https://ibbad.netlify.app">
+                <i class="fa-solid fa-house"></i>
+                Official Website</a> 
+            </li>
+            <li>
+                <a target="_blank" href="https://www.instagram.com/ui.ibbad"> 
+                    <i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                <li> <a target="_blank" href="https://www.linkedin.com/in/ibbad-shabbir-439079244/"><i class="fa-brands fa-linkedin-in"></i> Linkedin</a></li>
+                <li> <a target="_blank" href="https://github.com/Ibbad-Shabbir"><i class="fa-brands fa-github"></i> Github</a></li>
+           
+        </ul>
+
+    </main>
+</body>
+</html>
